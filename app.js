@@ -32,7 +32,7 @@ app.post("/",function(req,res){
 
 const jsondata = JSON.stringify(data);
 const url = "https://us20.api.mailchimp.com/3.0/lists/e3375a9a6f";
-const option = {method:'post',auth:"Anmol:a93bd4b2130519c640e9f4ad428858596-us20"};
+const option = {method:'post',auth:"Anmol:93bd4b2130519c640e9f4ad428858596-us20"};
 const reqst = https.request(url,option,function(responce){
 if(responce.statusCode===200){
   res.sendFile(__dirname+"/success.html");
